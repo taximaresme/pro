@@ -31,9 +31,23 @@
       <span>🇳🇱 <strong>Heb je een taxi nodig?</strong></span> &bull;
       <span>🇬🇧 <strong>Need a taxi?</strong></span>
     </div>
-    <a href="tel:+34606714630" class="btn">📞 Llama Ahora</a>
-    <a href="https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi
-" class="btn">💬 WhatsApp</a>
+    <a href="tel:+34606714630" class="btn"
+   onclick="gtag('event', 'click_call', {
+     event_category: 'boton',
+     event_label: 'Llamar Ahora'
+   });">
+   📞 Llama Ahora
+</a>
+
+<a href="https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi"
+   class="btn"
+   onclick="gtag('event', 'click_whatsapp', {
+     event_category: 'boton',
+     event_label: 'WhatsApp'
+   });">
+   💬 WhatsApp
+</a>
+
   </header>
 
   <section>
