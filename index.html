@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>  
-<!-- GTM -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M5734DWV');</script>
-<!-- End -->
+  <!-- GTM -->
+  <script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-M5734DWV');
+  </script>
+  <!-- End GTM -->
+
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; connect-src 'self' https://www.googletagmanager.com https://www.google.com/ccm/collect; img-src 'self' https://www.googletagmanager.com https://www.google.com/ccm/collect;">  
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com;
+    connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.google.com/ccm/collect;
+    img-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.google.com/ccm/collect;
+  ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Taxi Vilassar de Dalt | Tu Taxi de Confianza</title>
   <meta name="description" content="Taxi profesional en Vilassar de Dalt, Maresme y alrededores. Atención personalizada, multilingüe y disponible 24/7.">
-  <meta name="keywords" content="Taxi Vilassar de Dalt, taxi Maresme, taxi Mataró, taxi Premià, taxi aeropuerto, taxi 24h, taxista autónomo">
   <meta name="author" content="Tu Taxi de Confianza">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>  
-  <!-- GTM(noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5734DWV"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End(noscript) -->  
+  <!-- GTM (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5734DWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End GTM (noscript) -->  
+
   <header>
     <h1>Tu Taxi de Confianza 🚖</h1>
     <div style="font-size: 1.2em; line-height: 1.6; text-align: center;">
@@ -29,46 +39,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span>🇷🇴 <strong>Ai nevoie de un taxi?</strong></span> &bull;
       <span>🇷🇺 <strong>Вам нужен такси?</strong></span> &bull;
       <span>🇺🇦 <strong>Потрібне таксі?</strong></span> &bull;
-      <span>🇳🇱 <strong>Heb je een taxi nodig?</strong></span> &bull;
+      <span>🇳🇱 <strong>Heb je un taxi nodig?</strong></span> &bull;
       <span>🇬🇧 <strong>Need a taxi?</strong></span>
     </div>
-    <!-- Btn -->
-<a href="#" class="btn" onclick="trackPhoneClick(); return false;">
-  📞 Llama Ahora
-</a>
-<script>
-  function trackPhoneClick() {
-    dataLayer.push({
-      event: 'conversion_llamada',
-      telefono: '+34606714630'
-    });
-    setTimeout(function() {
-      window.location.href = 'tel:+34606714630';
-    }, 300);
-  }
-</script>
-<!-- Btn -->
-<a href="#" class="btn" onclick="trackWhatsAppClick(); return false;">
-  💬 WhatsApp
-</a>
-<script>
-  function trackWhatsAppClick() {
-    dataLayer.push({
-      event: 'conversion_whatsapp',
-      whatsapp_url: 'https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi'
-    });
-    setTimeout(function() {
-      window.location.href = 'https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi';
-    }, 300);
-  }
-</script>
+
+    <!-- Botón Teléfono -->
+    <a href="tel:+34606714630" class="btn" onclick="trackPhoneClick()">
+      📞 Llama Ahora
+    </a>
+
+    <!-- Botón WhatsApp -->
+    <a href="https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi" 
+       class="btn" onclick="trackWhatsAppClick()">
+      💬 WhatsApp
+    </a>
   </header>
+
   <section>
     <h2>🚗 Zona de servicio: Vilassar de Dalt y Baix Maresme</h2>
     <p>
-      Desde las callejuelas llenas de historia de <strong>Vilassar de Dalt</strong> hasta las playas de <strong>Vilassar de Mar</strong>, pasando por la elegancia de <strong>Cabrils</strong> y el encanto de <strong>Premià, Argentona, Tiana y Teià</strong>, esta zona es mi hogar y tú, mi prioridad.<br><br> Si estás en el <strong>Maresme</strong>, estás a un solo clic de moverte con estilo, seguridad y puntualidad.
+      Desde las callejuelas llenas de historia de <strong>Vilassar de Dalt</strong> hasta las playas de <strong>Vilassar de Mar</strong>, pasando por la elegancia de <strong>Cabrils</strong> y el encanto de <strong>Premià, Argentona, Tiana y Teià</strong>, esta zona es mi hogar y tú, mi prioridad.<br><br> 
+      Si estás en el <strong>Maresme</strong>, estás a un solo clic de moverte con estilo, seguridad y puntualidad.
     </p>
   </section>
+
   <section>
     <h2>🛠️ Servicios</h2>
     <ul>
@@ -76,15 +70,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <li>✈️ Transfer al aeropuerto (El Prat, Girona)</li>
       <li>🎉 Recogidas para eventos especiales</li>
       <li>💳 Pago en efectivo o tarjeta</li>
-      <li>🌍 Atención en español, catalán, inglés, ruso, rumano y ucraniano</li>
+      <li>🌍 Atención en varios idiomas</li>
     </ul>
   </section>
+
   <section>
     <h2>📢 ¿Sabías que…?</h2>
     <p>Los traslados profesionales pueden ser deducibles si eres autónomo. ¡Consúltame y te ayudo a gestionarlo!</p>
     <p>Además, ofrezco acuerdos con empresas locales para traslados regulares. ¡Menos estrés, más puntualidad!</p>
     <p>Y si eres amante de la música... 🕺 puedes pedir tu playlist personalizada para el trayecto.</p>
   </section>
+
   <section>
     <h2>💬 Testimonios</h2>
     <blockquote>
@@ -94,26 +90,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       “Siempre disponible, incluso en días festivos. ¡Gracias por tanto!” – Yuri D.
     </blockquote>
   </section>
+
   <footer>
     <p>&copy; 2025 Tu Taxi de Confianza | Vilassar de Dalt y Comarca del Maresme</p>
     <p><a href="#cookies">Política de Cookies</a> | <a href="#legal">Aviso Legal y Términos</a></p>
   </footer>
+
   <section id="cookies">
-    <section id="cookies">
-  <h2>🍪 Política de Cookies</h2>
-  <p>
-    Este sitio no utiliza cookies ni tecnologías de seguimiento. Tu navegación es completamente anónima y respetuosa con la privacidad.
-  </p>
-</section>
-<section id="legal">
-  <h2>📜 Aviso Legal y Política de Privacidad</h2>
-  <p>
-    Este sitio no recopila datos personales ni emplea mecanismos de rastreo. No se utilizan cookies propias ni de terceros.
-  </p>
-  <p>
-    Apostamos por una web ética, transparente y libre de vigilancia digital.
-  </p>
-</section>
+    <h2>🍪 Política de Cookies</h2>
+    <p>Este sitio no utiliza cookies ni tecnologías de seguimiento. Tu navegación es completamente anónima y respetuosa con la privacidad.</p>
   </section>
+
+  <section id="legal">
+    <h2>📜 Aviso Legal y Política de Privacidad</h2>
+    <p>Este sitio no recopila datos personales ni emplea mecanismos de rastreo. No se utilizan cookies propias ni de terceros.</p>
+    <p>Apostamos por una web ética, transparente y libre de vigilancia digital.</p>
+  </section>
+
+  <!-- Scripts de tracking al final -->
+  <script>
+    function trackPhoneClick() {
+      dataLayer.push({
+        event: 'conversion_llamada',
+        telefono: '+34606714630'
+      });
+    }
+    function trackWhatsAppClick() {
+      dataLayer.push({
+        event: 'conversion_whatsapp',
+        whatsapp_url: 'https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi'
+      });
+    }
+  </script>
 </body>
+</html>
+
 </html>
