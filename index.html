@@ -43,35 +43,17 @@
       <span>🇬🇧 <strong>Need a taxi?</strong></span>
     </div>
 
-    <a href="#" class="btn" onclick="trackPhoneClick(); return false;">
+    <!-- Botón Teléfono -->
+<a href="tel:+34606714630" class="btn btn-call">
   📞 Llama Ahora
 </a>
-<script>
-  function trackPhoneClick() {
-    dataLayer.push({
-      event: 'conversion_llamada',
-      telefono: '+34606714630'
-    });
-    alert('Evento conversion_llamada enviado'); // solo para pruebas
-  }
-</script>
-
 
 <!-- Botón WhatsApp -->
-<a href="#" class="btn" onclick="trackWhatsAppClick(); return false;">
+<a href="https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi" 
+   class="btn btn-whatsapp">
   💬 WhatsApp
 </a>
-<script>
-  function trackWhatsAppClick() {
-    dataLayer.push({
-      event: 'conversion_whatsapp',
-      whatsapp_url: 'https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi'
-    });
-    setTimeout(function() {
-      window.location.href = 'https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi';
-    }, 2000); // 2 segundos de margen
-  }
-</script>
+
 
     
   </header>
