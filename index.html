@@ -43,8 +43,7 @@
       <span>🇬🇧 <strong>Need a taxi?</strong></span>
     </div>
 
-    <!-- Botón Teléfono -->
-<a href="#" class="btn" onclick="trackPhoneClick(); return false;">
+    <a href="#" class="btn" onclick="trackPhoneClick(); return false;">
   📞 Llama Ahora
 </a>
 <script>
@@ -53,11 +52,10 @@
       event: 'conversion_llamada',
       telefono: '+34606714630'
     });
-    setTimeout(function() {
-      window.location.href = 'tel:+34606714630';
-    }, 2000); // 2 segundos de margen
+    alert('Evento conversion_llamada enviado'); // solo para pruebas
   }
 </script>
+
 
 <!-- Botón WhatsApp -->
 <a href="#" class="btn" onclick="trackWhatsAppClick(); return false;">
