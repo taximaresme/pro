@@ -44,15 +44,37 @@
     </div>
 
     <!-- Botón Teléfono -->
-    <a href="tel:+34606714630" class="btn" onclick="trackPhoneClick()">
-      📞 Llama Ahora
-    </a>
+<a href="#" class="btn" onclick="trackPhoneClick(); return false;">
+  📞 Llama Ahora
+</a>
+<script>
+  function trackPhoneClick() {
+    dataLayer.push({
+      event: 'conversion_llamada',
+      telefono: '+34606714630'
+    });
+    setTimeout(function() {
+      window.location.href = 'tel:+34606714630';
+    }, 2000); // Espera 2 segundos antes de redirigir
+  }
+</script>
 
-    <!-- Botón WhatsApp -->
-    <a href="https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi" 
-       class="btn" onclick="trackWhatsAppClick()">
-      💬 WhatsApp
-    </a>
+<!-- Botón WhatsApp -->
+<a href="#" class="btn" onclick="trackWhatsAppClick(); return false;">
+  💬 WhatsApp
+</a>
+<script>
+  function trackWhatsAppClick() {
+    dataLayer.push({
+      event: 'conversion_whatsapp',
+      whatsapp_url: 'https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi'
+    });
+    setTimeout(function() {
+      window.location.href = 'https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi';
+    }, 2000); // Espera 2 segundos antes de redirigir
+  }
+</script>
+    
   </header>
 
   <section>
@@ -107,21 +129,6 @@
     <p>Apostamos por una web ética, transparente y libre de vigilancia digital.</p>
   </section>
 
-  <!-- Scripts de tracking al final -->
-  <script>
-    function trackPhoneClick() {
-      dataLayer.push({
-        event: 'conversion_llamada',
-        telefono: '+34606714630'
-      });
-    }
-    function trackWhatsAppClick() {
-      dataLayer.push({
-        event: 'conversion_whatsapp',
-        whatsapp_url: 'https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi'
-      });
-    }
-  </script>
 </body>
 </html>
 
