@@ -2,13 +2,13 @@
 <html lang="es">
 <head>   
   
-<!-- Google Tag Manager -->
+<!-- GTM -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-M5734DWV');</script>
-<!-- End Google Tag Manager -->
+<!-- End -->
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,10 +20,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 <body>
   
-  <!-- Google Tag Manager (noscript) -->
+  <!-- GTM(noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5734DWV"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<!-- End(noscript) -->
   
   <header>
     <h1>Tu Taxi de Confianza 🚖</h1>
@@ -35,16 +35,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span>🇳🇱 <strong>Heb je een taxi nodig?</strong></span> &bull;
       <span>🇬🇧 <strong>Need a taxi?</strong></span>
     </div>
-    <!-- Botón de llamada -->
-<a href="tel:+34606714630" class="btn" onclick="setTimeout(function(){ window.location.href='tel:+34606714630'; }, 300); return false;">
+    <!-- Btn -->
+<a href="#" class="btn" onclick="trackPhoneClick(); return false;">
   📞 Llama Ahora
 </a>
 
+<script>
+  function trackPhoneClick() {
+    dataLayer.push({
+      event: 'conversion_llamada',
+      telefono: '+34606714630'
+    });
+    setTimeout(function() {
+      window.location.href = 'tel:+34606714630';
+    }, 300);
+  }
+</script>
 
-<!-- Botón de WhatsApp -->
-<a href="https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi" class="btn" onclick="setTimeout(function(){ window.location.href='https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi'; }, 300); return false;">
+
+
+
+<!-- Btn -->
+<a href="#" class="btn" onclick="trackWhatsAppClick(); return false;">
   💬 WhatsApp
 </a>
+
+<script>
+  function trackWhatsAppClick() {
+    dataLayer.push({
+      event: 'conversion_whatsapp',
+      whatsapp_url: 'https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi'
+    });
+    setTimeout(function() {
+      window.location.href = 'https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi';
+    }, 300);
+  }
+</script>
+
+
 
   </header>
 
@@ -89,21 +117,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </footer>
 
   <section id="cookies">
-    <h2>🍪 Política de Cookies</h2>
-    <p>
-      Esta web utiliza cookies propias y de terceros para mejorar tu experiencia de navegación, analizar el tráfico y ofrecer contenidos relevantes. No se recopilan datos personales sin tu consentimiento. Puedes configurar tus preferencias desde el navegador. Al continuar navegando, aceptas nuestra política de cookies.
-    </p>
-  </section>
+    <section id="cookies">
+  <h2>🍪 Política de Cookies</h2>
+  <p>
+    Este sitio no utiliza cookies ni tecnologías de seguimiento. Tu navegación es completamente anónima y respetuosa con la privacidad.
+  </p>
+</section>
 
-  <section id="legal">
-    <h2>📜 Aviso Legal y Términos</h2>
-    <p>
-      Todos los contenidos publicados en este sitio web se encuentran bajo la licencia Creative Commons CC0 1.0 Universal. Esto implica que el autor ha cedido su obra al dominio público, permitiendo su uso libre para cualquier propósito, sin necesidad de autorización previa, siempre que ello sea legalmente posible.    </p>
-    <p>
-      Los servicios prestados se desarrollan de acuerdo con la normativa vigente aplicable al transporte de pasajeros en vehículos con licencia.    </p>
-    <p>
-      Este sitio cumple con las disposiciones del Reglamento General de Protección de Datos (RGPD) y demás normativa europea en materia de privacidad y protección de datos personales.
-    </p>
+<section id="legal">
+  <h2>📜 Aviso Legal y Política de Privacidad</h2>
+  <p>
+    Este sitio no recopila datos personales ni emplea mecanismos de rastreo. No se utilizan cookies propias ni de terceros.
+  </p>
+  <p>
+    Apostamos por una web ética, transparente y libre de vigilancia digital.
+  </p>
+</section>
+
   </section>
 </body>
 </html>
