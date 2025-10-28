@@ -1,30 +1,34 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const callBtn = document.querySelector(".btn-call");
-  if (callBtn) {
-    callBtn.addEventListener("click", function (e) {
-      e.preventDefault(); // Evita que el navegador siga el href inmediatamente
-      dataLayer.push({
-        event: "conversion_llamada",
-        telefono: "+34606714630" 
-      });
-      setTimeout(function () {
-        window.location.href = "tel:+34606714630";
-      }, 300);
-    });
-  }
+document.addEventListener("DOMContentLoaded", () => {
+  const trackAndRedirect = (selector, eventName, eventData, redirectUrl) => {
+    const button = document.querySelector(selector);
+    if (!button) return;
 
-  const whatsappBtn = document.querySelector(".btn-whatsapp");
-  if (whatsappBtn) {
-    whatsappBtn.addEventListener("click", function (e) {
+    button.addEventListener("click", (e) => {
       e.preventDefault();
-      dataLayer.push({
-        event: "conversion_whatsapp",
-        whatsapp_url: "https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi"
-      });
-      setTimeout(function () {
-        window.location.href =
-          "https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi";
+      if (window.dataLayer && typeof window.dataLayer.push === "function") {
+        dataLayer.push({ event: eventName, ...eventData });
+      }
+      setTimeout(() => {
+        window.location.href = redirectUrl;
       }, 300);
     });
-  }
+  };
+
+  trackAndRedirect(
+    ".btn-call",
+    "conversion_llamada",
+    { telefono: "+34606714630" },
+    "tel:+34606714630"
+  );
+
+  trackAndRedirect(
+    ".btn-whatsapp",
+    "conversion_whatsapp",
+    {
+      whatsapp_url:
+        "https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi",
+    },
+    "https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi"
+  );
 });
+
