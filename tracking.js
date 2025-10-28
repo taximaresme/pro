@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault(); // Evita que el navegador siga el href inmediatamente
       dataLayer.push({
         event: "conversion_llamada",
-        telefono: "+34606714630"
+        telefono: "+34606714630" 
       });
       setTimeout(function () {
         window.location.href = "tel:+34606714630";
-      }, 300); 
+      }, 300);
+    });
   }
 
-  
   const whatsappBtn = document.querySelector(".btn-whatsapp");
   if (whatsappBtn) {
     whatsappBtn.addEventListener("click", function (e) {
