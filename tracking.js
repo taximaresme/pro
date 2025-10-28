@@ -1,17 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
   const trackAndRedirect = (selector, eventName, eventData, redirectUrl) => {
     const button = document.querySelector(selector);
     if (!button) return;
 
-    button.addEventListener("click", (e) => {
+    const handleClick = (e) => {
       e.preventDefault();
       if (window.dataLayer && typeof window.dataLayer.push === "function") {
-        dataLayer.push({ event: eventName, ...eventData });
+        window.dataLayer.push({ event: eventName, ...eventData });
       }
       setTimeout(() => {
         window.location.href = redirectUrl;
       }, 300);
-    });
+    };
+
+    button.addEventListener("click", handleClick);
+    button.addEventListener("touchstart", handleClick);
   };
 
   trackAndRedirect(
@@ -31,4 +34,5 @@ document.addEventListener("DOMContentLoaded", () => {
     "https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi"
   );
 });
+
 
