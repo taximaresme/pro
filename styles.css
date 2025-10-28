@@ -206,4 +206,10 @@ footer a:hover {
   .map-section iframe {
     height: 300px;
   }
+  .idioma-banner {
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: center;
+}
+
 }
