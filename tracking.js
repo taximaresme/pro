@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       setTimeout(function () {
         window.location.href = "tel:+34606714630";
-      }, 2000); // 2 segundos de margen
+      }, 500); // 2 segundos de margen
     });
   }
 
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
       setTimeout(function () {
         window.location.href =
           "https://wa.me/34622432522?text=Hola,%20quiero%20reservar%20un%20taxi";
-      }, 2000);
+      }, 500);
     });
   }
 });
