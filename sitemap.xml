@@ -24,23 +24,7 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- Sección Cookies -->
-  <url>
-    <loc>https://www.maresmetaxi.link/#cookies</loc>
-    <lastmod>2025-12-07</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- Sección Privacidad -->
-  <url>
-    <loc>https://www.maresmetaxi.link/#legal</loc>
-    <lastmod>2025-12-07</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- Sección Aviso Legal -->
+  <!-- Sección Aviso Legal / Cookies / Privacidad -->
   <url>
     <loc>https://www.maresmetaxi.link/#legal</loc>
     <lastmod>2025-12-07</lastmod>
@@ -48,5 +32,3 @@
     <priority>0.5</priority>
   </url>
 </urlset>
-
-
