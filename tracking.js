@@ -29,9 +29,9 @@ window.addEventListener("load", () => {
     "conversion_whatsapp",
     {
       whatsapp_url:
-        "https://wa.me/34606714630?text=Hola,%20quiero%20reservar%20un%20taxi",
+        "https://wa.me/34606714630?text=Hola,%20quiero%20reservar%20un%20taxi.%20Te%20envio%20mi%20ubicacion%20actual%20y%20espero%20tu%20ubicacion%20en%20tiempo%20real%20para%20ver%20tu%20llegada",
     },
-    "https://wa.me/34606714630?text=Hola,%20quiero%20reservar%20un%20taxi"
+    "https://wa.me/34606714630?text=Hola,%20quiero%20reservar%20un%20taxi.%20Te%20envio%20mi%20ubicacion%20actual%20y%20espero%20tu%20ubicacion%20en%20tiempo%20real%20para%20ver%20tu%20llegada"
   );
 });
 
