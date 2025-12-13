@@ -1,52 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Página principal -->
-    <url>
-        <loc>https://www.maresmetaxi.link/</loc>
-        <lastmod>2025-12-13</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <!-- Sección de Testimonios -->
-    <url>
-        <loc>https://www.maresmetaxi.link/#testimonios</loc>
-        <lastmod>2025-12-13</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <!-- Sección de Servicios -->
-    <url>
-        <loc>https://www.maresmetaxi.link/#servicios</loc>
-        <lastmod>2025-12-13</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <!-- Sección de Zona de servicio -->
-    <url>
-        <loc>https://www.maresmetaxi.link/#zona-de-servicio</loc>
-        <lastmod>2025-12-13</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <!-- Aviso Legal -->
-    <url>
-        <loc>https://www.maresmetaxi.link/#legal</loc>
-        <lastmod>2025-12-13</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <!-- Política de Cookies -->
-    <url>
-        <loc>https://www.maresmetaxi.link/#cookies</loc>
-        <lastmod>2025-12-13</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <!-- Política de Privacidad -->
-    <url>
-        <loc>https://www.maresmetaxi.link/#privacidad</loc>
-        <lastmod>2025-12-13</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
+
+  <!-- Página principal -->
+  <url>
+    <loc>https://www.maresmetaxi.link/</loc>
+    <lastmod>2025-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Sección servicios -->
+  <url>
+    <loc>https://www.maresmetaxi.link/#servicios</loc>
+    <lastmod>2025-12-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Sección zona de servicio -->
+  <url>
+    <loc>https://www.maresmetaxi.link/#zona</loc>
+    <lastmod>2025-12-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Sección testimonios -->
+  <url>
+    <loc>https://www.maresmetaxi.link/#testimonios</loc>
+    <lastmod>2025-12-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Aviso legal / cookies / privacidad -->
+  <url>
+    <loc>https://www.maresmetaxi.link/#legal</loc>
+    <lastmod>2025-12-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
 </urlset>
+
