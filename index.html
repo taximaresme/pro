@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
   <!-- GTM -->
   <script>
     (function(w,d,s,l,i){
@@ -34,7 +34,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <!-- Open Graph (WhatsApp, LinkedIn, etc.) -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.maresmetaxi.link/">
   <meta property="og:title" content="MaresmeTaxi | Taxi en Vilassar de Dalt y Maresme">
@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://www.googletagmanager.com">
   <link rel="preconnect" href="https://www.google-analytics.com">
 
-  <!-- CSP compatible -->
+  <!-- CSP -->
   <meta http-equiv="Content-Security-Policy" content="
     default-src 'self';
     script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com;
@@ -89,69 +89,102 @@
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+  <!-- GTM (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5734DWV"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End GTM (noscript) -->
 
+  <!-- Hero / Cabecera principal -->
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="hero-badge">Taxi oficial en Vilassar de Dalt y Maresme</p>
+      <h1>Tu taxi de confianza para el Maresme</h1>
+      <p class="hero-subtitle">
+        Traslados puntuales, trato cercano y reserva fácil por teléfono o WhatsApp.
+      </p>
 
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>  
-    <!-- GTM (noscript) -->
-    <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5734DWV"
-              height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End GTM (noscript) -->  
-
-    <header>
-      <h1>Tu Taxi de Confianza 🚖</h1>
       <div class="idioma-banner">
-        <span>🇪🇸 <strong>¿Necesitas taxi?</strong></span> &bull;
-        <span>🇷🇴 <strong>Ai nevoie de un taxi?</strong></span> &bull;
-        <span>🇷🇺 <strong>Вам нужен такси?</strong></span> &bull;
-        <span>🇺🇦 <strong>Потрібне таксі?</strong></span> &bull;
-        <span>🇳🇱 <strong>Heb je un taxi nodig?</strong></span> &bull;
-        <span>🇬🇧 <strong>Need a taxi?</strong></span>
+        🇪🇸 ¿Necesitas taxi? &bull;
+        🇷🇴 Ai nevoie de un taxi? &bull;
+        🇷🇺 Вам нужен такси? &bull;
+        🇺🇦 Потрібне таксі? &bull;
+        🇳🇱 Heb je een taxi nodig? &bull;
+        🇬🇧 Need a taxi?
       </div>
 
-      <!-- Botón Teléfono -->
-      <a href="tel:+34606714630" class="btn btn-call">
-        📞 Llama Ahora
-      </a>
+      <div class="hero-actions">
+        <a href="tel:+34606714630" class="btn btn-primary">📞 Llamar ahora</a>
+        <a href="https://wa.me/34606714630?text=Hola,%20quiero%20reservar%20un%20taxi.%20Te%20envio%20mi%20ubicacion%20actual%20y%20espero%20tu%20ubicacion%20en%20tiempo%20real%20para%20ver%20tu%20llegada"
+           class="btn btn-whatsapp">💬 Reservar por WhatsApp</a>
+      </div>
 
-      <!-- Botón WhatsApp -->
-      <a href="https://wa.me/34606714630?text=Hola,%20quiero%20reservar%20un%20taxi.%20Te%20envio%20mi%20ubicacion%20actual%20y%20espero%20tu%20ubicacion%20en%20tiempo%20real%20para%20ver%20tu%20llegada" 
-         class="btn btn-whatsapp">
-        💬 WhatsApp
-      </a>
-    </header>
+      <p class="hero-hours">Horario habitual: 5:00 – 22:00 · Fuera de horario con reserva previa</p>
+    </div>
+  </header>
 
-    <section>
-      <h2>🚗 Zona de servicio: Vilassar de Dalt y Baix Maresme</h2>
-      <p>
-        Desde las callejuelas llenas de historia de <strong>Vilassar de Dalt</strong> hasta las playas de <strong>Vilassar de Mar</strong>, pasando por la elegancia de <strong>Cabrils</strong> y el encanto de <strong>Premià, Argentona, Tiana y Teià</strong>, esta zona es mi hogar y tú, mi prioridad.<br><br> 
-        Si estás en el <strong>Maresme</strong>, estás a un solo clic de moverte con estilo, seguridad y puntualidad.
-      </p>
+  <main>
+    <!-- Por qué MaresmeTaxi -->
+    <section class="section">
+      <h2>¿Por qué elegir MaresmeTaxi?</h2>
+      <div class="features-grid">
+        <article class="feature-card">
+          <h3>🚖 Profesional y puntual</h3>
+          <p>Te recojo a la hora acordada y te llevo a tu destino sin sorpresas, atascos evitables ni desvíos raros.</p>
+        </article>
+        <article class="feature-card">
+          <h3>🌍 Hablo varios idiomas</h3>
+          <p>Atención en español, rumano, ruso, ucraniano, inglés y neerlandés para que puedas explicarte con tranquilidad.</p>
+        </article>
+        <article class="feature-card">
+          <h3>💳 Pago flexible</h3>
+          <p>Acepto efectivo y tarjeta. Si eres autónomo o empresa, te facilito factura para tus traslados.</p>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h2>🛠️ Servicios</h2>
-      <ul>
-        <li>🕒 Taxi disponible todos los días, 5:00–22:00 h. Desplazamientos fuera de horario con reserva anticipada</li>
-        <li>✈️ Transfer al aeropuerto (El Prat, Girona)</li>
-        <li>🎉 Recogidas para eventos especiales</li>
-        <li>💳 Pago en efectivo o tarjeta</li>
-        <li>🌍 Atención en varios idiomas</li>
+    <!-- Servicios -->
+    <section class="section">
+      <h2>Servicios de taxi</h2>
+      <ul class="services-list">
+        <li>🕒 Servicio diario en el Maresme · 5:00–22:00</li>
+        <li>✈️ Traslados al aeropuerto (El Prat, Girona)</li>
+        <li>🚉 Traslados a estaciones de tren y bus</li>
+        <li>🎉 Eventos, cenas, bodas y celebraciones</li>
+        <li>🏢 Traslados para empresas y autónomos</li>
+        <li>🧳 Viajes interurbanos y trayectos largos</li>
       </ul>
     </section>
 
-    <section>
-      <h2>📢 ¿Sabías que…?</h2>
-      <p>Los traslados profesionales pueden ser deducibles si eres autónomo. ¡Consúltame y te ayudo a gestionarlo!</p>
-      <p>Además, ofrezco acuerdos con empresas locales para traslados regulares. ¡Menos estrés, más puntualidad!</p>
-      <p>Y si eres amante de la música... 🕺 puedes pedir tu playlist personalizada para el trayecto.</p>
+    <!-- Zona de servicio -->
+    <section class="section">
+      <h2>Zona de servicio</h2>
+      <p>
+        Trabajo principalmente en <strong>Vilassar de Dalt</strong> y la zona del <strong>Baix Maresme</strong>:
+        Vilassar de Mar, Premià, Cabrils, Argentona, Teià, Tiana y alrededores.
+      </p>
+      <p>
+        Si estás por el Maresme y necesitas un traslado seguro y puntual,
+        estás a un mensaje de tener tu taxi reservado.
+      </p>
     </section>
 
-    <section>
-      <h2>💬 Testimonios</h2>
+    <!-- Cómo funciona -->
+    <section class="section">
+      <h2>¿Cómo reservo un taxi?</h2>
+      <ol class="steps">
+        <li><strong>1. Elige cómo contactar:</strong> llamada directa o WhatsApp.</li>
+        <li><strong>2. Indica:</strong> punto de recogida, destino y hora aproximada.</li>
+        <li><strong>3. Te confirmo el tiempo estimado de llegada.</strong></li>
+        <li><strong>4. Te recojo y te llevo cómodo y sin estrés.</strong></li>
+      </ol>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="section">
+      <h2>Opiniones de clientes</h2>
       <blockquote>
         “Un taxista amable, puntual y muy profesional. ¡No lo cambio por nada!” – Alina M.
       </blockquote>
@@ -160,42 +193,47 @@
       </blockquote>
     </section>
 
-    <footer>
-      <p>&copy; 2025 Tu Taxi de Confianza | Vilassar de Dalt y Comarca del Maresme</p>
-      <p>Publicado bajo licencia MIT</p>
-      <p>
-        <a href="#cookies">Cookies</a> | 
-        <a href="#legal">Privacidad</a> | 
-        <a href="#legal">Aviso Legal</a>
-      </p>
-    </footer>
+    <!-- Info fiscal / empresas -->
+    <section class="section">
+      <h2>Para autónomos y empresas</h2>
+      <p>Si eres profesional, autónomo o empresa, podemos organizar traslados recurrentes con factura y condiciones claras.</p>
+      <p>Consúltame por WhatsApp o teléfono y vemos la opción que mejor encaja con tu día a día.</p>
+    </section>
 
-    <section id="legal">
-      <h2>📜 Aviso Legal</h2>
+    <!-- Legal -->
+    <section class="section" id="legal">
+      <h2>Aviso legal, cookies y privacidad</h2>
+
+      <h3>Aviso legal</h3>
       <p>
-        El contenido de este sitio se publica bajo licencia libre MIT, lo que permite su uso, copia y redistribución con atribución. 
-        El responsable del sitio no recopila datos identificativos de los visitantes. 
-        La única información procesada proviene de servicios externos como Google, que registran parámetros técnicos de navegación con fines estadísticos.
+        El contenido de este sitio se publica bajo licencia libre MIT, lo que permite su uso, copia y redistribución con atribución.
+        El responsable del sitio no recopila datos identificativos de los visitantes.
+        La información procesada proviene únicamente de servicios externos como Google, que registran datos técnicos de navegación con fines estadísticos.
       </p>
 
-      <h2>🍪 Cookies</h2>
+      <h3>Cookies</h3>
       <p>
-        Este sitio no emplea cookies propias ni guarda información personal. 
-        Únicamente se utilizan servicios de Google (como Tag Manager y Analytics) para obtener métricas generales de uso y mejorar la visibilidad del servicio. 
+        Este sitio no emplea cookies propias ni guarda información personal directamente.
+        Solo se utilizan servicios de Google (como Tag Manager y Analytics) para métricas generales de uso y mejorar la visibilidad del servicio.
         Estos registros son agregados y no permiten identificar usuarios individuales.
       </p>
 
-      <h2>🔒 Privacidad</h2>
+      <h3>Privacidad</h3>
       <p>
-        La navegación en este sitio es anónima. 
-        Los datos tratados por los servicios externos son agregados y anónimos, y se emplean únicamente con fines estadísticos. 
+        La navegación en este sitio es anónima.
+        Los datos tratados por servicios externos son agregados y se emplean únicamente con fines estadísticos.
         No se generan perfiles personales ni se comparten datos con terceros distintos de los proveedores técnicos necesarios para su funcionamiento.
       </p>
     </section>
+  </main>
 
-    <script src="tracking.js"></script>
-  </body>
+  <footer>
+    <p>&copy; 2025 MaresmeTaxi · Vilassar de Dalt y comarca del Maresme</p>
+    <p>
+      <a href="#legal">Aviso legal, cookies y privacidad</a>
+    </p>
+  </footer>
+
+  <script src="tracking.js"></script>
+</body>
 </html>
-
-
-
