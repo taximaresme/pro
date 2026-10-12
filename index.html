@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- GTM -->
-  <script>
-    (function(w,d,s,l,i){
-      w[l]=w[l]||[];
-      w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
-      var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),
-          dl=l!='dataLayer'?'&l='+l:'';
-      j.async=true;
-      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-      f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-M5734DWV');
-  </script>
-  <!-- End GTM -->
-
   <!-- Básico del documento -->
   <meta charset="UTF-8">
   <title>MaresmeTaxi | Taxi en Vilassar de Dalt y Maresme</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google tag (gtag.js) - Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-7069594225"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-7069594225');
+  </script>
 
   <!-- SEO básico -->
   <meta name="description" content="Taxi en Vilassar de Dalt y Maresme. Traslados rápidos, seguros y reserva fácil por teléfono o WhatsApp.">
@@ -42,25 +36,11 @@
   <meta property="og:image" content="https://www.maresmetaxi.link/og-image.png">
   <meta property="og:locale" content="es_ES">
 
-
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="MaresmeTaxi | Taxi en Vilassar de Dalt y Maresme">
   <meta name="twitter:description" content="Taxi en Vilassar de Dalt y Maresme. Traslados rápidos, seguros y reserva fácil por teléfono o WhatsApp.">
   <meta name="twitter:image" content="https://www.maresmetaxi.link/og-image.png">
-
-  <!-- Preconnect -->
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="preconnect" href="https://www.google-analytics.com">
-
-  <!-- CSP corregida -->
-  <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self';
-    script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com;
-    connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com;
-    img-src 'self' https://www.googletagmanager.com https://www.google-analytics.com data:;
-    frame-src https://www.googletagmanager.com;
-  ">
 
   <!-- Datos estructurados -->
   <script type="application/ld+json">
@@ -92,13 +72,6 @@
 </head>
 
 <body>
-  <!-- GTM (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5734DWV"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <!-- End GTM (noscript) -->
-
   <!-- Hero / Cabecera principal -->
   <header class="hero">
     <div class="hero-inner">
@@ -118,9 +91,15 @@
       </div>
 
       <div class="hero-actions">
-        <a href="tel:+34606714630" class="btn btn-primary">📞 Llamar ahora</a>
+        <a href="tel:+34606714630" class="btn btn-primary"
+           onclick="gtag('event', 'conversion', {'send_to': 'AW-7069594225/7358924091'});">
+           📞 Llamar ahora
+        </a>
         <a href="https://wa.me/34606714630?text=Hola,%20quiero%20reservar%20un%20taxi.%20Te%20envio%20mi%20ubicacion%20actual%20y%20espero%20tu%20ubicacion%20en%20tiempo%20real%20para%20ver%20tu%20llegada"
-           class="btn btn-whatsapp">💬 Reservar por WhatsApp</a>
+           class="btn btn-whatsapp"
+           onclick="gtag('event', 'conversion', {'send_to': 'AW-7069594225/7358733508'});">
+           💬 Reservar por WhatsApp
+        </a>
       </div>
 
       <p class="hero-hours">Horario habitual: 5:00 – 22:00 · Fuera de horario con reserva previa</p>
@@ -216,7 +195,7 @@
       <h3>Cookies</h3>
       <p>
         Este sitio no emplea cookies propias ni guarda información personal directamente.
-        Solo se utilizan servicios de Google (como Tag Manager y Analytics) para métricas generales de uso y mejorar la visibilidad del servicio.
+        Solo se utiliza la etiqueta de Google Ads para medir las conversiones (clics en llamada y WhatsApp) y mejorar la visibilidad del servicio.
         Estos registros son agregados y no permiten identificar usuarios individuales.
       </p>
 
@@ -235,8 +214,6 @@
       <a href="#legal">Aviso legal, cookies y privacidad</a>
     </p>
   </footer>
-
-  <script src="tracking.js"></script>
 </body>
 </html>
 
